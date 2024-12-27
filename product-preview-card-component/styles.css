@@ -45,3 +45,27 @@
   #root, #__next {
     isolation: isolate;
   }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust as needed */
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 60vh;
+    width: 40vh;
+    margin: 0 auto;
+  }
+
+  .container img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
