@@ -1,0 +1,169 @@
+:root {
+  /* Colors */
+  --White: hsl(0, 0%, 100%);
+  --Stone100: hsl(30, 54%, 90%);
+  --Stone150: hsl(30, 18%, 87%);
+  --Stone600: hsl(30, 10%, 34%);
+  --Stone900: hsl(24, 5%, 18%);
+  --Brown800: hsl(14, 45%, 36%);
+  --Rose800: hsl(332, 51%, 32%);
+  --Rose50: hsl(330, 100%, 98%);
+
+  /* Body Copy */
+  --Fontsizeparagraph: 16px;
+  --Fontfamilybody: "Outfit", sans-serif;
+  --Fontfamilyheading: "Young Serif", serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: 1px solid red; */
+}
+
+body {
+  font-family: var(--Fontfamilybody);
+  background-color: var(--Stone100);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+.container {
+  background-color: var(--White);
+  border: 8px solid white;
+  border-radius: 25px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  max-width: 720px;
+  height: auto;
+}
+
+h1 {
+  font-family: var(--Fontfamilyheading);
+  font-weight: 500;
+}
+
+.container ul,
+.container ol {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+  list-style-position: inside;
+}
+
+.container ul li,
+.container ol li {
+  margin-bottom: 8px;
+}
+
+ol {
+  list-style: none; /* Removed default numbers */
+  counter-reset: list-counter; /* Initialized a counter */
+  padding-left: 40px; /* Indent the list to make space for custom numbers */
+}
+
+ol li {
+  counter-increment: list-counter; /* Increment the counter for each list item */
+  position: relative; /* Allows the custom number to be positioned */
+  padding-left: 30px; /* Shifts content to the right */
+}
+
+ol li:last-child {
+  margin-bottom: 1rem;
+}
+
+ol li::before {
+  content: counter(list-counter) "."; /* Display the counter with a dot */
+  position: absolute;
+  left: -20px;
+  font-weight: bold;
+  color: var(--Brown800);
+}
+
+hr {
+  border: none;
+  height: 0.5px;
+  background-color: lightgrey;
+  width: 100%;
+  margin: 1.5rem 0;
+}
+
+.img {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+p {
+  font-size: var(--Fontsizeparagraph);
+  margin: 1rem 0;
+}
+
+.prep-time {
+  border-radius: 8px;
+  margin: 18px 0 18px 0;
+  padding: 1.5rem;
+  padding-bottom: 0.75rem;
+  background-color: var(--Rose50);
+}
+
+.prep-time h3 {
+  color: var(--Rose800);
+  font-family: var(--Fontfamilybody);
+}
+
+ul {
+  list-style: none;
+  list-style-position: inside;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+ul li::before {
+  content: "•";
+  font-weight: bold;
+  color: var(--Rose800);
+  margin-right: 10px;
+  position: relative;
+  left: -18px;
+}
+
+.h2brown {
+  color: var(--Brown800);
+  font-family: var(--Fontfamilyheading);
+  font-weight: 500;
+}
+
+table {
+  width: 100%;
+  margin-left: 8px;
+  border-spacing: 0 10px;
+  border-collapse: separate;
+  background-color: var(--White);
+  font-size: var(--Fontsizeparagraph);
+}
+
+table tr td {
+  border-bottom: 1px solid lightgray;
+  padding: 8px;
+}
+
+table tr:last-child td {
+  border-bottom: none;
+}
+
+table td:nth-child(2) {
+  color: var(--Brown800);
+  font-weight: bold;
+}
