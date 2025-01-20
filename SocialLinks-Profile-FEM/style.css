@@ -1,0 +1,118 @@
+:root {
+  --Green: hsl(75, 94%, 57%);
+  --White: hsl(0, 0%, 100%);
+  --Greylight: hsl(0, 0%, 20%);
+  --Greynormal: hsl(0, 0%, 12%);
+  --Greydark: hsl(0, 0%, 8%);
+  --Fontsizeparagraph: 14px;
+  --FontFamily: "Inter", sans-serif;
+  --Fontweightlight: 400;
+  --Fontweightbold: 700;
+  --Fontweightsemi: 600;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 60vh;
+  max-height: 80%;
+  width: 320px;
+  margin: auto;
+  background-color: var(--Greynormal);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px #000000;
+  border: 2px solid #00000000;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--Greydark);
+}
+
+.buttons {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--White);
+  background-color: var(--Greylight);
+  box-shadow: 0px 8px 14px rgba(0, 0, 0, 0.2);
+  border: 4px solid transparent;
+  border-radius: 5px;
+  width: 250px;
+  padding: 8px 16px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 800;
+  transition: background-color 0.3s ease;
+}
+
+.social-links {
+  display: grid;
+  gap: 1rem;
+  list-style-type: none;
+  padding: 8px 16px;
+}
+
+.social-links li {
+  display: inline-block;
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--Greylight);
+}
+
+.button img {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  margin-top: -10px;
+}
+
+.profile-info {
+  text-align: center;
+  font-family: var(--FontFamily);
+}
+
+.name {
+  font-size: 20px;
+  font-weight: var(--Fontweightbold);
+  color: var(--White);
+}
+
+.location {
+  font-size: 14px;
+  font-weight: var(--Fontweightlight);
+  color: var(--Green);
+  margin-top: -15px;
+}
+
+.bio {
+  font-size: var(--Fontsizeparagraph);
+  font-weight: var(--Fontweightlight);
+  color: var(--White);
+}
+
+@media (max-width: 476px) {
+  .card {
+    width: 300px;
+    padding: 1.5em;
+  }
+}
