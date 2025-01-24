@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(0, 0%, 95%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: hsl(47, 88%, 63%);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: hsl(0, 0%, 100%);
+  width: 90%; /* Adjusts the width to 90% of the viewport */
+  max-width: 400px; /* Limits the max width on large screens */
+  height: auto; /* Let height grow naturally with content */
+  border-radius: 15px;
+  border: 9px solid black;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+.card-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25vh; /* Relative to viewport height */
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 2vh; /* Relative to viewport height for better responsiveness */
+  margin-bottom: 2vh;
+  font-family: "Figtree", sans-serif;
+}
+
+.label {
+  display: inline-block;
+  background-color: #f2c94c;
+  color: #000000;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.2rem 1rem;
+  border-radius: 3px;
+  margin-bottom: 1.5vh;
+}
+
+.date-time {
+  font-size: 0.9rem;
+  margin-bottom: 1vh;
+  font-weight: 600;
+  font-family: "Figtree";
+}
+
+.card-title {
+  padding-bottom: 0.5vh;
+  margin-bottom: 1vh;
+  margin-top: 2vh;
+  font-family: "Figtree";
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
+.card-description {
+  font-size: 1rem;
+  padding-bottom: 1vh;
+  color: gray;
+}
+
+.author-info {
+  margin-top: 1vh;
+  display: flex;
+  align-items: center;
+}
+
+.author-info img {
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+}
+
+.author-name {
+  font-size: 0.8rem;
+  font-weight: bolder;
+  margin-left: 10px;
+  font-style: normal;
+}
