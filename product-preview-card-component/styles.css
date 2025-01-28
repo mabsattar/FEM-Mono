@@ -48,7 +48,7 @@
   }
 
   .container {
-    display: grid;
+    display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -56,21 +56,29 @@
 
   .product-image {
     display: block;
-    height: 10rem;
+    height: 30rem;
     max-width: 20rem;
+    border: 5px solid black;
   }
 
  .product-info {
      display: block;
-     border: 10px solid black;
      height: 30rem;
      max-width: 20rem;
+     border: 5px solid black;
  }
 
-  .pricing button {
+ .pricing, h2 {
+     display: flex;
+ }
+
+  .pricing, h3 {
+     display: flex;
+  }
+
+  .pricing, button {
       color: white;
       background-color: hsl(158, 36%, 37%);
-      align-content: center;
       height: 35px;
       width: 10rem;
   }
