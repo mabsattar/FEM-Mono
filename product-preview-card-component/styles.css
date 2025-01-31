@@ -56,14 +56,14 @@
 
   .product-image {
     display: block;
-    height: 30rem;
+    max-height: 30em;
     max-width: 20rem;
     border: 5px solid black;
   }
 
  .product-info {
      display: block;
-     height: 30rem;
+     height: 30em;
      max-width: 20rem;
      border: 5px solid black;
  }
