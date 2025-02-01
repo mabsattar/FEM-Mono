@@ -1,93 +1,121 @@
 /* 1. Use a more-intuitive box-sizing model */
-*, *::before, *::after {
-    box-sizing: border-box;
-  }
-  
-  /* 2. Remove default margin */
-  * {
-    margin: 0;
-  }
-  
-  body {
-    /* 3. Add accessible line-height */
-    line-height: 2.5;
-    /* 4. Improve text rendering */
-    -webkit-font-smoothing: antialiased;
-    background-color: hsl(30, 38%, 92%);
-  }
-  
-  /* 5. Improve media defaults */
-  img, picture, video, canvas, svg {
-    display: block;
-    max-width: 100%;
-  }
-  
-  /* 6. Inherit fonts for form controls */
-  input, button, textarea, select {
-    font: inherit;
-  }
-  
-  /* 7. Avoid text overflows */
-  p, h1, h2, h3, h4, h5, h6 {
-    overflow-wrap: break-word;
-  }
-  
-  /* 8. Improve line wrapping */
-  p {
-    text-wrap: pretty;
-  }
-  h1, h2, h3, h4, h5, h6 {
-    text-wrap: balance;
-  }
-  
-  /*
-    9. Create a root stacking context
-  */
-  #root, #__next {
-    isolation: isolate;
-  }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
 
-  .product-image {
-    display: block;
-    max-height: 30em;
-    max-width: 20rem;
-    border: 5px solid black;
-  }
+body {
+  /* 3. Add accessible line-height */
+  line-height: 2.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+  background-color: hsl(30, 38%, 92%);
+}
 
- .product-info {
-     display: block;
-     height: 30em;
-     max-width: 20rem;
-     border: 5px solid black;
- }
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
 
- .pricing, h2 {
-     display: flex;
- }
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
 
-  .pricing, h3 {
-     display: flex;
-  }
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
 
-  .pricing, button {
-      color: white;
-      background-color: hsl(158, 36%, 37%);
-      height: 35px;
-      width: 10rem;
-  }
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
 
-  .cart-button img {
-      width: 20px; /* Adjust size as needed */
-      height: auto;
-      margin-right: 10px; /* Space between icon and text */
-  }
+/*
+   9. Create a root stacking context
+ */
+#root,
+#__next {
+  isolation: isolate;
+}
 
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 
+.product-image {
+  display: block;
+  max-height: 30em;
+  max-width: 20rem;
+  border: 5px solid black;
+}
 
+.product-info {
+  display: block;
+  height: 30em;
+  max-width: 20rem;
+  border: 5px solid black;
+  align-items: center;
+  padding: 20px;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.product-title {
+  font-family: 'Fraunces', serif;
+}
+
+.pricing,
+h2 {
+  display: flex;
+}
+
+.pricing,
+h3 {
+  display: flex;
+}
+
+.pricing,
+button {
+  color: white;
+  background-color: hsl(158, 36%, 37%);
+  height: 35px;
+  width: 10rem;
+}
+
+.cart-button img {
+  width: 20px; /* Adjust size as needed */
+  height: auto;
+  margin-right: 10px; /* Space between icon and text */
+}
