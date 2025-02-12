@@ -79,17 +79,20 @@ h6 {
   display: block;
   max-height: 30em;
   max-width: 20rem;
-  border: 5px solid black;
 }
 
 .product-info {
   display: block;
   height: 30em;
   max-width: 20rem;
-  border: 5px solid black;
   align-items: center;
   padding: 20px;
   background-color: hsl(0, 0%, 100%);
+}
+
+.category {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
 }
 
 .product-title {
