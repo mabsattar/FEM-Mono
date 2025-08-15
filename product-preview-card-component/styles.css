@@ -99,9 +99,13 @@ h6 {
     font-family: 'Fraunces', serif;
 }
 
-.pricing,
-h2 {
-    display: flex;
+.pricing  {
+  display: flex;
+  align-items: center;
+}
+
+.pricing h3 {
+  margin-left: 20px;
 }
 
 .cart-button img {
