@@ -105,13 +105,15 @@ h6 {
 }
 
 .pricing h3 {
-  margin-left: 20px;
+  margin-left: 40px;
 }
 
 .cart-button {
   display: flex;
-  justify-content: center;
   width: 70%;
+  height: auto;
+  justify-content: center;
+
 }
 
 /* .cart-button button { */
