@@ -108,8 +108,20 @@ h6 {
   margin-left: 20px;
 }
 
+.cart-button {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+}
+
+/* .cart-button button { */
+/*   display: flex; */
+/*   width: 70%; */
+/*   height: 40px; */
+/* } */
+
 .cart-button img {
-    width: 20px; /* Adjust size as needed */
-    height: auto;
-    margin-right: 10px; /* Space between icon and text */
+  display: block;
+  width: 20px;
+  height: 30px;
 }
