@@ -90,6 +90,10 @@ h6 {
     background-color: hsl(0, 0%, 100%);
 }
 
+.product-info p {
+  font-size: 14px;
+}
+
 .category {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
