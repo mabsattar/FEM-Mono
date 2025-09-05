@@ -1,3 +1,8 @@
+:root {
+  --titlefont: "Fraunces", sans-serif,
+	       --categoryfont: "Montserrat", sans-serif;
+}
+
 /* 1. Use a more-intuitive box-sizing model */
 *,
 *::before,
@@ -30,7 +35,7 @@ svg {
 
 /* 6. Inherit fonts for form controls */
 input,
-button,
+vbutton,
 textarea,
 select {
   font: inherit;
@@ -103,18 +108,20 @@ h6 {
 }
 
 .category {
-  font-family: 'Montserrat', sans-serif;
+  font-family: --var(categoryfont);
   font-size: 14px;
   font-weight: 280;
-  letter-spacing: 3.5px;
-  line-height: -2px;
+  letter-spacing: 4.5px;
+  line-height: -3px;
 }
 
 .product-title {
-  font-family: 'Fraunces', serif;
+  font-family: --var(titlefont);
   font-weight: 600;
-  font-size: 2.5rem;
-  line-height: 1.1;
+  font-size: 2.2rem;
+  line-height: 1.0;
+  margin-top: 10px;
+  margin-bottom: 15px;
 }
 
 .pricing  {
